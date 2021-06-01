@@ -1,0 +1,3 @@
+C:\Users\yyind\source\repos\Attendancelog\Attendancelog\x64\Debug\Attendancelog.vcxprojAssemblyReference.cache
+C:\Users\yyind\source\repos\Attendancelog\Attendancelog\x64\Debug\Attendancelog.MyForm.resources
+C:\Users\yyind\source\repos\Attendancelog\Attendancelog\x64\Debug\Attendancelog.vcxproj.GenerateResource.cache
