@@ -19,6 +19,13 @@ namespace Attendancelog {
 		TableForm(void)
 		{
 			InitializeComponent();
+			isActiveform = false;
+		}
+		TableForm(MyForm^ f)
+		{
+			InitializeComponent();
+			isActiveform = true;
+			mainform = f;
 		}
 
 	protected:
@@ -149,7 +156,9 @@ namespace Attendancelog {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->MaximizeBox = false;
 			this->Name = L"TableForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Создание таблицы";
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -157,6 +166,9 @@ namespace Attendancelog {
 		}
 #pragma endregion
 	private:
+
+		MyForm^ mainform;
+		bool isActiveform;
 		void button1_Click(Object^ sender, EventArgs^ e);
 		void button2_Click(System::Object^ sender, System::EventArgs^ e);
 };

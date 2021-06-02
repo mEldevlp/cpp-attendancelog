@@ -132,7 +132,7 @@ private:
 	System::Windows::Forms::DateTimePicker^ dateTimePicker1;
 	System::Windows::Forms::Label^ label5;
 	System::Windows::Forms::Label^ label6;
-	System::ComponentModel::BackgroundWorker^ backgroundWorker1;
+
 	System::Windows::Forms::ToolStripMenuItem^ логированиеToolStripMenuItem;
 
 	   /// <summary>
@@ -237,7 +237,6 @@ private:
 			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
 			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
 			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->menuStrip1->SuspendLayout();
 			this->groupBoxCreate->SuspendLayout();
@@ -1064,6 +1063,7 @@ private:
 			this->groupBoxCreate->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
+
 		}
 
 #pragma endregion
@@ -1072,7 +1072,7 @@ public:
 	Decimal ERRORSCOUNT;			//Подсчёт ошибок
 
 public:
-	void CreateTable(int Amount, String^ NameOfOrg);							//Создание таблицы
+	void CreateTable(int Amount, String^ NameOfOrg, int date);							//Создание таблицы
 
 private:
 	int		CurrRowOld;

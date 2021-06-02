@@ -256,7 +256,7 @@ System::void MyForm::Save()
 */
 //void MyForm::CreateTable(Object^ sender, EventArgs^ e, Decimal Amount, String^ NameOfOrg, int date)
 
-void MyForm::CreateTable(int Amount, String^ NameOfOrg)
+void MyForm::CreateTable(int Amount, String^ NameOfOrg, int date)
 {
 	//Сохранение настроек
 	AmountOfPeople = Amount;
@@ -279,7 +279,7 @@ void MyForm::CreateTable(int Amount, String^ NameOfOrg)
 	for (short i = 1; i < MAXCOLS - 5; i++)
 		dataGridView1[i, dataGridView1->RowCount - 1]->ReadOnly = true;
 
-	//label6->Text = "[" + getMonth(date) + "]";
+	label6->Text = "[" + getMonth(date) + "]";
 	
 	DisplayTable();
 }
@@ -348,7 +348,6 @@ void MyForm::СountMain()
 		for (short j = 0; j < AmountOfPeople; j++)
 			if (getColorCell(i, j) == Color::FromArgb(0, 0, 0) && (dataGridView1[i, j]->Value != "" || dataGridView1[i, j]->Value != nullptr))
 				SetNullCell(i, j);
-
 	try
 	{
 		if (!isError())

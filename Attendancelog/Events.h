@@ -86,7 +86,7 @@ void MyForm::î÷èñòèòüToolStripMenuItem_Click(Object^ sender, EventArgs^ e)
 				if (getColorCell(i, j) != Color::FromArgb(0, 0, 0))
 				{
 					SetColor(i, j, Color::FromArgb(255, 255, 255));
-					if (i > 2)
+					if (i > 1)
 						SetNullCell(i, j);
 				}
 
@@ -287,9 +287,8 @@ void MyForm::óáðàòüÇåë¸íûåÑòðîêèToolStripMenuItem_Click(Object^ sender, EventArg
 
 void MyForm::òàáëèöóToolStripMenuItem_Click(Object^ sender, EventArgs^ e)
 {
-	TableForm^ createtable = gcnew TableForm();
+	TableForm^ createtable = gcnew TableForm(this);
 	createtable->ShowDialog();
-
 }
 
 void MyForm::øàáëîíToolStripMenuItem_Click(Object^ sender, EventArgs^ e)
@@ -556,17 +555,16 @@ void MyForm::îòêðûòüToolStripMenuItem_Click(Object^ sender, EventArgs^ e)
 void TableForm::button1_Click(Object^ sender, EventArgs^ e)
 {
 	int amount = Convert::ToInt16(textBox1->Text);
-	String^ nameorg = textBox2->Text;
+	String^ name = textBox2->Text;
+	int date = dateTimePicker1->Value.Month;
 
-	MyForm^ Nform = gcnew MyForm();
-	Nform->Visible = true;
-	Nform->CreateTable(amount, nameorg);
+	mainform->CreateTable(amount, name, date);
 
-	TableForm::Close();
+	TableForm::~TableForm();
 }
 
 void TableForm::button2_Click(System::Object^ sender, System::EventArgs^ e)
 {
-	//throw gcnew System::NotImplementedException();
+	TableForm::~TableForm();
 }
 
