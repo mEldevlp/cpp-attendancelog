@@ -526,7 +526,11 @@ void MyForm::открытьToolStripMenuItem_Click(Object^ sender, EventArgs^ e)
 					}
 				}
 			}
+<<<<<<< HEAD
 			catch (...)
+=======
+			catch (InvalidCastException^ e)
+>>>>>>> cf7c1418bc9edc2f16674abbd93826554292bfdb
 			{
 				auto result = MessageBox::Show("Произошла неизвестная ошибка", "Ошибка",
 					MessageBoxButtons::OK,
@@ -544,7 +548,11 @@ void MyForm::открытьToolStripMenuItem_Click(Object^ sender, EventArgs^ e)
 
 				dataGridView1->Rows->RemoveAt(j);	//Удаляем вспомогательную строку
 				MyForm::Text = "Журнал посещаемости " + " [" + PATH + "]";
+<<<<<<< HEAD
 				DisplayTable();
+=======
+				DisplayTable();	//Отображаем таблицу
+>>>>>>> cf7c1418bc9edc2f16674abbd93826554292bfdb
 				label6->Visible = false;
 				changeamount = 0;
 			}
@@ -554,6 +562,7 @@ void MyForm::открытьToolStripMenuItem_Click(Object^ sender, EventArgs^ e)
 
 void TableForm::button1_Click(Object^ sender, EventArgs^ e)
 {
+<<<<<<< HEAD
 	bool success = false;
 	
 	try
@@ -602,5 +611,19 @@ void Attendancelog::TableForm::TableForm_FormClosing(System::Object^ sender, Sys
 		else
 			e->Cancel = true;
 	}
+=======
+	int amount = Convert::ToInt16(textBox1->Text);
+	String^ name = textBox2->Text;
+	int date = dateTimePicker1->Value.Month;
+
+	mainform->CreateTable(amount, name, date);
+
+	TableForm::~TableForm();
+}
+
+void TableForm::button2_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	TableForm::~TableForm();
+>>>>>>> cf7c1418bc9edc2f16674abbd93826554292bfdb
 }
 

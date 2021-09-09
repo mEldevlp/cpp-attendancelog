@@ -865,8 +865,13 @@ private:
 					this->убрать«елЄные—трокиToolStripMenuItem, this->не”вќт¬—≈√ќToolStripMenuItem, this->логированиеToolStripMenuItem
 			});
 			this->дополнительноToolStripMenuItem->Name = L"дополнительноToolStripMenuItem";
+<<<<<<< HEAD
 			this->дополнительноToolStripMenuItem->Size = System::Drawing::Size(56, 20);
 			this->дополнительноToolStripMenuItem->Text = L"ќпции";
+=======
+			this->дополнительноToolStripMenuItem->Size = System::Drawing::Size(107, 20);
+			this->дополнительноToolStripMenuItem->Text = L"ƒополнительно";
+>>>>>>> cf7c1418bc9edc2f16674abbd93826554292bfdb
 			// 
 			// зелЄный0ToolStripMenuItem
 			// 

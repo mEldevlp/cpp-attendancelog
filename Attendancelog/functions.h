@@ -197,7 +197,11 @@ void MyForm::SaveAs()
 							myWritet->Write("_^" + Convert::ToString(CheckColor(backcolor_)) + "%");
 					}
 			}
+<<<<<<< HEAD
 			catch (...) {}
+=======
+			catch (InvalidCastException^ e) {}
+>>>>>>> cf7c1418bc9edc2f16674abbd93826554292bfdb
 			finally
 			{
 				myWritet->Close();

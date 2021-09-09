@@ -110,7 +110,11 @@ namespace Attendancelog {
 			// 
 			this->dateTimePicker1->Location = System::Drawing::Point(13, 142);
 			this->dateTimePicker1->Name = L"dateTimePicker1";
+<<<<<<< HEAD
 			this->dateTimePicker1->Size = System::Drawing::Size(162, 20);
+=======
+			this->dateTimePicker1->Size = System::Drawing::Size(144, 20);
+>>>>>>> cf7c1418bc9edc2f16674abbd93826554292bfdb
 			this->dateTimePicker1->TabIndex = 4;
 			// 
 			// label3
@@ -155,6 +159,7 @@ namespace Attendancelog {
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox1);
+<<<<<<< HEAD
 			this->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
@@ -165,6 +170,13 @@ namespace Attendancelog {
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Создание таблицы";
 			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &TableForm::TableForm_FormClosing);
+=======
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->MaximizeBox = false;
+			this->Name = L"TableForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Text = L"Создание таблицы";
+>>>>>>> cf7c1418bc9edc2f16674abbd93826554292bfdb
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -176,7 +188,10 @@ namespace Attendancelog {
 		bool isActiveform;
 		void button1_Click(Object^ sender, EventArgs^ e);
 		void button2_Click(System::Object^ sender, System::EventArgs^ e);
+<<<<<<< HEAD
 		void TableForm_FormClosing(System::Object^ sender, System::Windows::Forms::FormClosingEventArgs^ e);
 
+=======
+>>>>>>> cf7c1418bc9edc2f16674abbd93826554292bfdb
 };
 }

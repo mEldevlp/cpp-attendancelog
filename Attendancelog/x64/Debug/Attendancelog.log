@@ -1,4 +1,9 @@
 ﻿  MyForm.cpp
+<<<<<<< HEAD
+=======
+C:\Users\yyind\source\repos\gitAttendancelog\Attendancelog\Events.h(529,33): warning C4101: e: неиспользованная локальная переменная
+C:\Users\yyind\source\repos\gitAttendancelog\Attendancelog\functions.h(200,33): warning C4101: e: неиспользованная локальная переменная
+>>>>>>> cf7c1418bc9edc2f16674abbd93826554292bfdb
   TableForm.cpp
   Создание кода...
   MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
