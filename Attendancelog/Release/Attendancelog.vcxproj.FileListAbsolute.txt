@@ -1,0 +1,4 @@
+C:\Users\yyind\source\repos\Attendancelog\Attendancelog\Release\Attendancelog.MyForm.resources
+C:\Users\yyind\source\repos\Attendancelog\Attendancelog\Release\Attendancelog.vcxproj.GenerateResource.cache
+C:\Users\yyind\source\repos\Attendancelog\Attendancelog\Release\Attendancelog.vcxprojAssemblyReference.cache
+C:\Users\yyind\source\repos\Attendancelog\Attendancelog\Release\Attendancelog.TableForm.resources

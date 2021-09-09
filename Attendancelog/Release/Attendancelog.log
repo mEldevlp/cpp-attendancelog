@@ -1,0 +1,7 @@
+﻿  MyForm.cpp
+C:\Users\yyind\source\repos\Attendancelog\Attendancelog\Events.h(530,33): warning C4101: e: неиспользованная локальная переменная
+C:\Users\yyind\source\repos\Attendancelog\Attendancelog\functions.h(201,33): warning C4101: e: неиспользованная локальная переменная
+  TableForm.cpp
+  Создание кода...
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Attendancelog.vcxproj -> C:\Users\yyind\source\repos\Attendancelog\Release\Attendancelog.exe
